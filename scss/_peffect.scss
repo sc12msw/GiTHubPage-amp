@@ -1,0 +1,10 @@
+.peffect{
+  display: none;
+}
+@media screen and (min-width:1200px) {
+  .peffect{
+    display: block;
+    @include parallaxEffect("assets/img/lake-mountain.jpg");
+    height: 250px;
+  }
+}

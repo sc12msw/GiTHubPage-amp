@@ -1,0 +1,13 @@
+.section {
+  min-height: 400px;
+  background-color: $white;
+  position: relative;
+  z-index: 3;
+
+  &__inner {
+    padding:15px;
+    display: block;
+    max-width: 1200px;
+    margin: auto;
+  }
+}

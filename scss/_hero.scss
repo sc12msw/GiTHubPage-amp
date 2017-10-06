@@ -1,0 +1,20 @@
+.hero {
+  min-height: 100vh;
+  display: flex;
+  @include parallaxEffect("assets/img/lake-mountain.jpg");
+  justify-content: center;
+  align-items: center;
+
+  &__heading {
+    color: white;
+    font-size: 35px;
+    padding: 20px;
+    background-color: rgba(0,0,0,0.9);
+    border:solid 2px $main;
+    border-radius: 25px;
+    text-align: center;
+    position: relative;
+    z-index: 3;
+  }
+
+}
