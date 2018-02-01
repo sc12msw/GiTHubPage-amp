@@ -9,7 +9,7 @@
   <script async src="https://cdn.ampproject.org/v0.js"></script>
   <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
   <style amp-custom>
-  h1,h2,h3,h4,h5{font-family:'Germania One', cursive}body{font-family:'Ropa Sans', sans-serif}.top{width:300px;padding-top:20px;padding-bottom:20px;display:block;position:absolute;top:0;left:30px;z-index:2}.top__heading{text-align:left;color:#324851;margin:0}.top__subheading{margin-top:10px;margin-bottom:0;font-size:26px;color:#7DA3A1;text-align:left}.hero{min-height:100vh;display:-webkit-box;display:-ms-flexbox;display:flex;background-image:url("assets/img/lake-mountain.jpg");background-size:cover;background-position:left;background-repeat:no-repeat;background-attachment:fixed;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.hero__heading{color:white;font-size:35px;padding:20px;background-color:rgba(0,0,0,0.9);border:solid 2px #324851;border-radius:25px;text-align:center;position:relative;z-index:3}.section{min-height:400px;background-color:#fff;position:relative;z-index:3}.section__inner{padding:15px;display:block;max-width:1200px;margin:auto}.section__exampleImage{margin:auto;padding:10px}.peffect{display:none}@media screen and (min-width: 1200px){.peffect{display:block;background-image:url("assets/img/lake-mountain.jpg");background-size:cover;background-position:left;background-repeat:no-repeat;background-attachment:fixed;height:250px}}
+  h1,h2,h3,h4,h5{font-family:'Germania One', cursive}body{font-family:'Ropa Sans', sans-serif}.top{width:300px;padding-top:20px;padding-bottom:20px;display:block;position:absolute;top:0;left:30px;z-index:2}.top__heading{text-align:left;color:#324851;margin:0}.top__subheading{margin-top:10px;margin-bottom:0;font-size:26px;color:#7DA3A1;text-align:left}.hero{min-height:100vh;display:-webkit-box;display:-ms-flexbox;display:flex;background-image:url("assets/img/lake-mountain.jpg");background-size:cover;background-position:left;background-repeat:no-repeat;background-attachment:fixed;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.hero__heading{color:white;font-size:35px;padding:20px;background-color:rgba(0,0,0,0.9);border:solid 2px #324851;border-radius:25px;text-align:center;position:relative;z-index:3}.section{min-height:400px;background-color:#fff;position:relative;z-index:3}.section__inner{padding:15px;display:block;max-width:1200px;margin:auto}.section__carousel-selector{text-align:center;padding-bottom:25px}.section__carousel-images{display:block;margin:auto;padding:10px}.peffect{display:none}@media screen and (min-width: 1200px){.peffect{display:block;background-image:url("assets/img/lake-mountain.jpg");background-size:cover;background-position:left;background-repeat:no-repeat;background-attachment:fixed;height:250px}}
 
   </style>
 </head>
@@ -29,91 +29,71 @@
         <div class="section__inner">
           <h2 class="section__heading"> Websites! </h2>
           <p>
-            My main experience comes from making child themes for wordpress. I have made <a href="https://aminasound.com"> Amina Sound </a>
+            I have made <a href="https://aminasound.com"> Amina Sound </a>
             which is a wordpress multisite based on the flat bootstrap theme for Amina Technologies.
-            This multisite should redirect you to the country you are in. My child theme is a fully fledged CMS
-            that uses advanced custom fields to allow the user to reuse any of the components built into the site. For example:
           </p>
+
+          <h3> Technologies Used </h3>
+
+          <ul>
+            <li>PHP (Wordpress and various plugins)</li>
+            <li>Bootstrap 3.0</li>
+            <li>Jquery (Various plugins)</li>
+            <li>SASS (Using my variation of BEM)</li>
+            <li>Gulp for Pre Processing of SCSS </li>
+            <li>Vargrant for local enviroment to develop (scotchbox) </li>
+          </ul>
+
+            This multisite should redirect you to the country you are in by using the htacess GEOIP configuration on the Apache server.
+            My child theme is a fully fledged CMS that uses advanced custom fields to allow the user to reuse any of the components built into the site.
+            For example:
+
+          </p>
+
           <amp-carousel id="wordpress-example-preview"
-          class="section__exampleImage"
-          height="300"
-          width="700"
+          class="section__carousel-images"
+          height="500"
+          width="1000"
           layout="responsive"
           type="slides">
           <amp-img
           src="assets/img/example1.jpg"
           alt="Editing a header of page"
-          height="700"
-          width="300"></amp-img>
+          height="500"
+          width="1000"></amp-img>
           <amp-img
           src="assets/img/example2.jpg"
           alt="Header of page"
-          height="300"
-          width="700"></amp-img>
-          <div class="code"
+          height="500"
+          width="1000"></amp-img>
+          <amp-img
           src="assets/img/example3.jpg"
           alt="Editing a header of page"
-          height="300"
-          width="700"></>
+          height="500"
+          width="1000"></amp-img>
         </amp-carousel>
-        <div class="carousel-preview">
-          <button on="tap:carousel-with-preview.goToSlide(index=0)">
+
+        <div class="carousel-preview section__carousel-selector">
+          <button on="tap:wordpress-example-preview.goToSlide(index=0)">
             <amp-img src="assets/img/example1.jpg"
             width="60"
             height="40"
             alt="Editing a header of page"></amp-img>
           </button>
-          <button on="tap:carousel-with-preview.goToSlide(index=1)">
+          <button on="tap:wordpress-example-preview.goToSlide(index=1)">
             <amp-img src="assets/img/example2.jpg"
             width="60"
             height="40"
             alt="Header of Page"></amp-img>
           </button>
-          <button on="tap:carousel-with-preview.goToSlide(index=2)">
+          <button on="tap:wordpress-example-preview.goToSlide(index=2)">
             <amp-img src="assets/img/example3.jpg"
             width="60"
             height="40"
             alt="code"></amp-img>
           </button>
         </div>
-      </section>
-      <div class="peffect"></div>
-      <section class="section">
-        <div class="section__inner">
-          <h2 class="section__heading"> Mobile Apps! </h2>
-          <p>
-            Bacon ipsum dolor amet ribeye frankfurter pig cupim tenderloin. Biltong jowl kevin t-bone, cow tail short ribs beef.
-            Rump cow tongue biltong capicola. Drumstick flank burgdoggen, shankle salami pastrami boudin cow hamburger bresaola
-            ribeye meatball leberkas filet mignon pork. Swine ground round chuck doner landjaeger, tri-tip brisket pork chop shoulder
-            capicola frankfurter boudin shankle pancetta. Pancetta ham hock jerky ball tip. Fatback pork belly leberkas swine tongue doner alcatra t-bone.
-            Tail pork belly prosciutto sausage, kevin ham pork filet mignon rump chuck. Tri-tip meatloaf short loin meatball. Ground round pork loin flank
-            ball tip doner strip steak prosciutto kevin. Pork chop doner tongue, ground round pork loin beef boudin cupim jowl shank picanha kevin tenderloin
-            biltong meatloaf. Strip steak capicola biltong landjaeger, fatback ham hock pork loin chicken filet mignon sausage. Turkey turducken porchetta tri-tip
-            alcatra tail shoulder, meatloaf picanha drumstick prosciutto.
-            Andouille porchetta sausage ribeye meatball brisket. Tri-tip venison jerky ham hock. Kielbasa pork belly corned beef shoulder.
-            Biltong pork chop rump kielbasa capicola. Ball tip brisket sausage pork chop tenderloin shank short loin. Landjaeger ribeye ball tip
-            sirloin short loin chicken, pig ham brisket ham hock beef shank. Drumstick picanha boudin pork belly pig salami hamburger.
-          </p>
-        </div>
-      </section>
-      <div class="peffect"></div>
-      <section class="section">
-        <div class="section__inner">
-          <h2 class="section__heading"> Consultancy / Security / Application Aritecture! </h2>
-          <p>
-            Bacon ipsum dolor amet ribeye frankfurter pig cupim tenderloin. Biltong jowl kevin t-bone, cow tail short ribs beef.
-            Rump cow tongue biltong capicola. Drumstick flank burgdoggen, shankle salami pastrami boudin cow hamburger bresaola
-            ribeye meatball leberkas filet mignon pork. Swine ground round chuck doner landjaeger, tri-tip brisket pork chop shoulder
-            capicola frankfurter boudin shankle pancetta. Pancetta ham hock jerky ball tip. Fatback pork belly leberkas swine tongue doner alcatra t-bone.
-            Tail pork belly prosciutto sausage, kevin ham pork filet mignon rump chuck. Tri-tip meatloaf short loin meatball. Ground round pork loin flank
-            ball tip doner strip steak prosciutto kevin. Pork chop doner tongue, ground round pork loin beef boudin cupim jowl shank picanha kevin tenderloin
-            biltong meatloaf. Strip steak capicola biltong landjaeger, fatback ham hock pork loin chicken filet mignon sausage. Turkey turducken porchetta tri-tip
-            alcatra tail shoulder, meatloaf picanha drumstick prosciutto.
-            Andouille porchetta sausage ribeye meatball brisket. Tri-tip venison jerky ham hock. Kielbasa pork belly corned beef shoulder.
-            Biltong pork chop rump kielbasa capicola. Ball tip brisket sausage pork chop tenderloin shank short loin. Landjaeger ribeye ball tip
-            sirloin short loin chicken, pig ham brisket ham hock beef shank. Drumstick picanha boudin pork belly pig salami hamburger.
-          </p>
-        </div>
+
       </section>
       <div class="peffect"></div>
       <section class="section">
@@ -121,18 +101,8 @@
           <h2 class="section__heading"> REST API! </h2>
 
           <p>
-
-            Bacon ipsum dolor amet ribeye frankfurter pig cupim tenderloin. Biltong jowl kevin t-bone, cow tail short ribs beef.
-            Rump cow tongue biltong capicola. Drumstick flank burgdoggen, shankle salami pastrami boudin cow hamburger bresaola
-            ribeye meatball leberkas filet mignon pork. Swine ground round chuck doner landjaeger, tri-tip brisket pork chop shoulder
-            capicola frankfurter boudin shankle pancetta. Pancetta ham hock jerky ball tip. Fatback pork belly leberkas swine tongue doner alcatra t-bone.
-            Tail pork belly prosciutto sausage, kevin ham pork filet mignon rump chuck. Tri-tip meatloaf short loin meatball. Ground round pork loin flank
-            ball tip doner strip steak prosciutto kevin. Pork chop doner tongue, ground round pork loin beef boudin cupim jowl shank picanha kevin tenderloin
-            biltong meatloaf. Strip steak capicola biltong landjaeger, fatback ham hock pork loin chicken filet mignon sausage. Turkey turducken porchetta tri-tip
-            alcatra tail shoulder, meatloaf picanha drumstick prosciutto.
-            Andouille porchetta sausage ribeye meatball brisket. Tri-tip venison jerky ham hock. Kielbasa pork belly corned beef shoulder.
-            Biltong pork chop rump kielbasa capicola. Ball tip brisket sausage pork chop tenderloin shank short loin. Landjaeger ribeye ball tip
-            sirloin short loin chicken, pig ham brisket ham hock beef shank. Drumstick picanha boudin pork belly pig salami hamburger.
+            All the iOS server uses xml to send the data. The android server uses json. Both have bootstrap based admin screens. Django uses its own template language to
+             compiles the modules of the pages.
           </p>
           <ul>
             <li> Icons by: </li>
@@ -142,6 +112,85 @@
           </ul>
         </div>
       </section>
+      <div class="peffect"></div>
+      <section class="section">
+        <div class="section__inner">
+          <h2 class="section__heading"> Mobile Apps! </h2>
+          <p>
+            Powered by a REST backend these mobile apps connect with the cloud to malnipuate the data they need
+            anywhere in the world.
+            The Android clock in and out app is powered by Django Rest-Framework. The iOS drug/pathogen interation app is powered by the Java Jersey Framework.
+            Both served by Apache servers (iOS app uses Tomcat).
+          </p>
+          <amp-carousel id="mobile-example-preview"
+          class="section__carousel-images"
+          height="500"
+          width="300"s
+          type="slides">
+          <amp-img
+          src="assets/img/example4.png"
+          alt="Clock in and out app front screen"
+          height="500"
+          width="300"></amp-img>
+          <amp-img
+          src="assets/img/example5.png"
+          alt="User list in app"
+          height="500"
+          width="300"></amp-img>
+          <amp-img
+          src="assets/img/example6.png"
+          alt="Drug app information"
+          height="500"
+          width="300"></amp-img>
+          <amp-img
+          src="assets/img/example7.png"
+          alt="Drug interaction information"
+          height="500"
+          width="300"></amp-img>
+        </amp-carousel>
+
+        <div class="carousel-preview section__carousel-selector">
+          <button on="tap:mobile-example-preview.goToSlide(index=0)">
+            <amp-img src="assets/img/example4.png"
+            width="60"
+            height="40"
+            alt="Clock in and out app front screen"></amp-img>
+          </button>
+          <button on="tap:mobile-example-preview.goToSlide(index=1)">
+            <amp-img src="assets/img/example5.png"
+            width="60"
+            height="40"
+            alt="User list in app"></amp-img>
+          </button>
+          <button on="tap:mobile-example-preview.goToSlide(index=2)">
+            <amp-img src="assets/img/example6.png"
+            width="60"
+            height="40"
+            alt="Drug app information"></amp-img>
+          </button>
+          <button on="tap:mobile-example-preview.goToSlide(index=2)">
+            <amp-img src="assets/img/example7.png"
+            width="60"
+            height="40"
+            alt="Drug interaction information"></amp-img>
+          </button>
+
+        </div>
+        </div>
+      </section>
+      <div class="peffect"></div>
+      <section class="section">
+        <div class="section__inner">
+          <h2 class="section__heading">Security</h2>
+          <p>
+            The Defense in depth approach:
+            Prevention: Iptables, firewalls, whitelisting, vpns, compartmentalisation, VMs, policy groups, UAC, Security certificate pinning etc.
+            Detection: Canary tokens, wireshark, heuristic monitoring, sysinternals (proexp.exe), honeypots  etc.
+            Recovery: Automated backups, disk images, Sandboxy
+          </p>
+        </div>
+      </section>
+
 
 
     </article>

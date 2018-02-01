@@ -11,8 +11,18 @@
     margin: auto;
   }
 
-  &__exampleImage {
-    margin: auto;
-    padding: 10px;
+  &__carousel {
+
+    &-selector {
+      text-align: center;
+      padding-bottom: 25px;
+    }
+
+    &-images {
+      display: block;
+      margin: auto;
+      padding: 10px;
+    }
   }
+
 }
