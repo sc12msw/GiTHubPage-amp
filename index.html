@@ -7,8 +7,9 @@
   <meta name="viewport" content="width=device-width,minimum-scale=1">
   <style amp-boilerplate>body{-webkit-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-moz-animation:-amp-start 8s steps(1,end) 0s 1 normal both;-ms-animation:-amp-start 8s steps(1,end) 0s 1 normal both;animation:-amp-start 8s steps(1,end) 0s 1 normal both}@-webkit-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-moz-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-ms-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@-o-keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}@keyframes -amp-start{from{visibility:hidden}to{visibility:visible}}</style><noscript><style amp-boilerplate>body{-webkit-animation:none;-moz-animation:none;-ms-animation:none;animation:none}</style></noscript>
   <script async src="https://cdn.ampproject.org/v0.js"></script>
+  <script async custom-element="amp-carousel" src="https://cdn.ampproject.org/v0/amp-carousel-0.1.js"></script>
   <style amp-custom>
-  h1,h2,h3,h4,h5{font-family:'Germania One', cursive}body{font-family:'Ropa Sans', sans-serif}.top{width:300px;padding-top:20px;padding-bottom:20px;display:block;position:absolute;top:0;left:30px;z-index:2}.top__heading{text-align:left;color:#324851;margin:0}.top__subheading{margin-top:10px;margin-bottom:0;font-size:26px;color:#7DA3A1;text-align:left}.hero{min-height:100vh;display:-webkit-box;display:-ms-flexbox;display:flex;background-image:url("assets/img/lake-mountain.jpg");background-size:cover;background-position:left;background-repeat:no-repeat;background-attachment:fixed;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.hero__heading{color:white;font-size:35px;padding:20px;background-color:rgba(0,0,0,0.9);border:solid 2px #324851;border-radius:25px;text-align:center;position:relative;z-index:3}.section{min-height:400px;background-color:#fff;position:relative;z-index:3}.section__inner{padding:15px;display:block;max-width:1200px;margin:auto}.peffect{display:none}@media screen and (min-width: 1200px){.peffect{display:block;background-image:url("assets/img/lake-mountain.jpg");background-size:cover;background-position:left;background-repeat:no-repeat;background-attachment:fixed;height:250px}}
+  h1,h2,h3,h4,h5{font-family:'Germania One', cursive}body{font-family:'Ropa Sans', sans-serif}.top{width:300px;padding-top:20px;padding-bottom:20px;display:block;position:absolute;top:0;left:30px;z-index:2}.top__heading{text-align:left;color:#324851;margin:0}.top__subheading{margin-top:10px;margin-bottom:0;font-size:26px;color:#7DA3A1;text-align:left}.hero{min-height:100vh;display:-webkit-box;display:-ms-flexbox;display:flex;background-image:url("assets/img/lake-mountain.jpg");background-size:cover;background-position:left;background-repeat:no-repeat;background-attachment:fixed;-webkit-box-pack:center;-ms-flex-pack:center;justify-content:center;-webkit-box-align:center;-ms-flex-align:center;align-items:center}.hero__heading{color:white;font-size:35px;padding:20px;background-color:rgba(0,0,0,0.9);border:solid 2px #324851;border-radius:25px;text-align:center;position:relative;z-index:3}.section{min-height:400px;background-color:#fff;position:relative;z-index:3}.section__inner{padding:15px;display:block;max-width:1200px;margin:auto}.section__exampleImage{margin:auto;padding:10px}.peffect{display:none}@media screen and (min-width: 1200px){.peffect{display:block;background-image:url("assets/img/lake-mountain.jpg");background-size:cover;background-position:left;background-repeat:no-repeat;background-attachment:fixed;height:250px}}
 
   </style>
 </head>
@@ -28,18 +29,52 @@
         <div class="section__inner">
           <h2 class="section__heading"> Websites! </h2>
           <p>
-            Bacon ipsum dolor amet ribeye frankfurter pig cupim tenderloin. Biltong jowl kevin t-bone, cow tail short ribs beef.
-            Rump cow tongue biltong capicola. Drumstick flank burgdoggen, shankle salami pastrami boudin cow hamburger bresaola
-            ribeye meatball leberkas filet mignon pork. Swine ground round chuck doner landjaeger, tri-tip brisket pork chop shoulder
-            capicola frankfurter boudin shankle pancetta. Pancetta ham hock jerky ball tip. Fatback pork belly leberkas swine tongue doner alcatra t-bone.
-            Tail pork belly prosciutto sausage, kevin ham pork filet mignon rump chuck. Tri-tip meatloaf short loin meatball. Ground round pork loin flank
-            ball tip doner strip steak prosciutto kevin. Pork chop doner tongue, ground round pork loin beef boudin cupim jowl shank picanha kevin tenderloin
-            biltong meatloaf. Strip steak capicola biltong landjaeger, fatback ham hock pork loin chicken filet mignon sausage. Turkey turducken porchetta tri-tip
-            alcatra tail shoulder, meatloaf picanha drumstick prosciutto.
-            Andouille porchetta sausage ribeye meatball brisket. Tri-tip venison jerky ham hock. Kielbasa pork belly corned beef shoulder.
-            Biltong pork chop rump kielbasa capicola. Ball tip brisket sausage pork chop tenderloin shank short loin. Landjaeger ribeye ball tip
-             sirloin short loin chicken, pig ham brisket ham hock beef shank. Drumstick picanha boudin pork belly pig salami hamburger.
+            My main experience comes from making child themes for wordpress. I have made <a href="https://aminasound.com"> Amina Sound </a>
+            which is a wordpress multisite based on the flat bootstrap theme for Amina Technologies.
+            This multisite should redirect you to the country you are in. My child theme is a fully fledged CMS
+            that uses advanced custom fields to allow the user to reuse any of the components built into the site. For example:
           </p>
+          <amp-carousel id="wordpress-example-preview"
+          class="section__exampleImage"
+          height="300"
+          width="700"
+          layout="responsive"
+          type="slides">
+          <amp-img
+          src="assets/img/example1.jpg"
+          alt="Editing a header of page"
+          height="700"
+          width="300"></amp-img>
+          <amp-img
+          src="assets/img/example2.jpg"
+          alt="Header of page"
+          height="300"
+          width="700"></amp-img>
+          <div class="code"
+          src="assets/img/example3.jpg"
+          alt="Editing a header of page"
+          height="300"
+          width="700"></>
+        </amp-carousel>
+        <div class="carousel-preview">
+          <button on="tap:carousel-with-preview.goToSlide(index=0)">
+            <amp-img src="assets/img/example1.jpg"
+            width="60"
+            height="40"
+            alt="Editing a header of page"></amp-img>
+          </button>
+          <button on="tap:carousel-with-preview.goToSlide(index=1)">
+            <amp-img src="assets/img/example2.jpg"
+            width="60"
+            height="40"
+            alt="Header of Page"></amp-img>
+          </button>
+          <button on="tap:carousel-with-preview.goToSlide(index=2)">
+            <amp-img src="assets/img/example3.jpg"
+            width="60"
+            height="40"
+            alt="code"></amp-img>
+          </button>
         </div>
       </section>
       <div class="peffect"></div>
@@ -57,7 +92,7 @@
             alcatra tail shoulder, meatloaf picanha drumstick prosciutto.
             Andouille porchetta sausage ribeye meatball brisket. Tri-tip venison jerky ham hock. Kielbasa pork belly corned beef shoulder.
             Biltong pork chop rump kielbasa capicola. Ball tip brisket sausage pork chop tenderloin shank short loin. Landjaeger ribeye ball tip
-             sirloin short loin chicken, pig ham brisket ham hock beef shank. Drumstick picanha boudin pork belly pig salami hamburger.
+            sirloin short loin chicken, pig ham brisket ham hock beef shank. Drumstick picanha boudin pork belly pig salami hamburger.
           </p>
         </div>
       </section>
@@ -76,7 +111,7 @@
             alcatra tail shoulder, meatloaf picanha drumstick prosciutto.
             Andouille porchetta sausage ribeye meatball brisket. Tri-tip venison jerky ham hock. Kielbasa pork belly corned beef shoulder.
             Biltong pork chop rump kielbasa capicola. Ball tip brisket sausage pork chop tenderloin shank short loin. Landjaeger ribeye ball tip
-             sirloin short loin chicken, pig ham brisket ham hock beef shank. Drumstick picanha boudin pork belly pig salami hamburger.
+            sirloin short loin chicken, pig ham brisket ham hock beef shank. Drumstick picanha boudin pork belly pig salami hamburger.
           </p>
         </div>
       </section>
@@ -97,7 +132,7 @@
             alcatra tail shoulder, meatloaf picanha drumstick prosciutto.
             Andouille porchetta sausage ribeye meatball brisket. Tri-tip venison jerky ham hock. Kielbasa pork belly corned beef shoulder.
             Biltong pork chop rump kielbasa capicola. Ball tip brisket sausage pork chop tenderloin shank short loin. Landjaeger ribeye ball tip
-             sirloin short loin chicken, pig ham brisket ham hock beef shank. Drumstick picanha boudin pork belly pig salami hamburger.
+            sirloin short loin chicken, pig ham brisket ham hock beef shank. Drumstick picanha boudin pork belly pig salami hamburger.
           </p>
           <ul>
             <li> Icons by: </li>
